@@ -6,6 +6,11 @@
     <style>
         body {color:rgb(179, 179, 179);}
     </style>
+    <script>
+        function printUseless() {
+          document.getElementById("secretArea").innerHTML = "Important message: I'm a retired button, I don't work anymore";
+        }
+    </script>
 </head>
 
 <body>
@@ -15,24 +20,32 @@
             <picture>
                 <source media="(min-width:600px)" srcset="images/cabrito.jpg">
                 <img src="images/cabra.jpg" alt="Baby Goat" style="width:400;">
-              </picture> 
-              <aside>
-                <h4>Picture of a goat</h4>
+            </picture> 
+             <aside>
+                <h3>Picture of a goat</h3>
                 <p> Kids (baby goats) begin climbing and jumping off tree stumps and bales of hay when they're just <span style="color:rgb(0, 121, 14);font-weight:bold">a week old</span>
                 </p>
-              </aside>
+            </aside> 
         </header>
+
+        <div id="code-section">
+            
+            <iframe src="https://www.programiz.com/java-programming/hello-world" title="Hello world tutorial">
+            </iframe><br />
+            <code>System.out.println("Hello World");</code> 
+
+        </div>
         <section id="name-form">
             <h3>Form Test- Enter your opinion</h3>
-
             <form>
                 <fieldset>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="Opinion">Opinion:</label><br>
-                    <textarea id="opinion" rows="4" cols="50"></textarea><br>
+                    <legend>Fill or select your answers</legend>
+                    <label for="fname">First name:</label><br />
+                    <input type="text" id="fname" name="fname"><br />
+                    <label for="lname">Last name:</label><br />
+                    <input type="text" id="lname" name="lname"><br />
+                    <label for="Opinion">Opinion:</label><br />
+                    <textarea id="opinion" rows="4" cols="50"></textarea><br />
                     
                     <label for="colors">Choose a color:</label>
                     <select name="cars" id="cars">
@@ -45,14 +58,70 @@
                         <option value="blue2">Blue2</option>
                         </optgroup>
                     </select>
-                    <br>
+                    <br />
+                    <label for="movies">Input or choose a movie:</label>
+                    <input list="moviesList" name="moviesList" id="moviesList">
+                        <datalist id="moviesList">
+                            <option value="The Matrix">
+                            <option value="Batman">
+                            <option value="Blade Runner">
+                            <option value="LOTR">
+                            <option value="Johnny Mnemonic">
+                    </datalist>
+                    <br />
 
-                    <button>Submit</button>
+                    <button  type="button" onclick="printUseless()">Submit</button>
+                    <p id="secretArea"></p>
                 </fieldset>
             </form>
-
         </section>
+        <section id="song">
+            <p>Play a song: </p>
+
+            <audio controls>
+                <source src="sounds/song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="moreContent">
+        <figure>
+            <img src="images/cabrito.jpg" alt="Baby goat" style="width:100%">
+            <figcaption>Same picture, but with a caption</figcaption>
+        </figure>
+
+        <details>
+            <summary>One more fact about goats. Click me!</summary>
+            <br />
+            <p>Goats can be taught their name and to come when called.</p>
+        </details>
+        <br />
+
         
+        <table style="border: 1px solid black;">
+            <colgroup>
+                <col span="2" class="movie">
+            </colgroup>
+            <caption>Sample table</caption>
+            <tr>
+            <th>Movie </th>
+            <th>Liked it?</th>
+            </tr>
+            <tr>
+            <td>LOTR</td>
+            <td>Yes</td>
+            </tr>
+            <tr>
+            <td>The Matrix</td>
+            <td>Yes</td>
+            </tr>
+        </table>
+        <ol>
+            <li>First </li>
+            <li>Second </li>
+            <li>Third </li>
+        </ol> 
+        </section>
+
 
     </main>
     <footer>
