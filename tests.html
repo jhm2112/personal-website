@@ -12,7 +12,46 @@
     <main>
         <header>
             <h1>Page for HW tests and misc</h1>
+            <picture>
+                <source media="(min-width:600px)" srcset="images/cabrito.jpg">
+                <img src="images/cabra.jpg" alt="Baby Goat" style="width:400;">
+              </picture> 
+              <aside>
+                <h4>Picture of a goat</h4>
+                <p> Kids (baby goats) begin climbing and jumping off tree stumps and bales of hay when they're just <span style="color:rgb(0, 121, 14);font-weight:bold">a week old</span>
+                </p>
+              </aside>
         </header>
+        <section id="name-form">
+            <h3>Form Test- Enter your opinion</h3>
+
+            <form>
+                <fieldset>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="Opinion">Opinion:</label><br>
+                    <textarea id="opinion" rows="4" cols="50"></textarea><br>
+                    
+                    <label for="colors">Choose a color:</label>
+                    <select name="cars" id="cars">
+                        <optgroup label="Colors 1"> 
+                        <option value="grey">Blue</option>
+                        <option value="red">Red</option>
+                        </optgroup>
+                        <optgroup label="Colors 2"> 
+                        <option value="green">Green</option>
+                        <option value="blue2">Blue2</option>
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+
+        </section>
         
 
     </main>
