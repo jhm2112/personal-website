@@ -23,7 +23,7 @@
             </picture> 
              <aside>
                 <h3>Picture of a goat</h3>
-                <p> Kids (baby goats) begin climbing and jumping off tree stumps and bales of hay when they're just <span style="color:rgb(0, 121, 14);font-weight:bold">a week old</span>
+                <p> Kids <em><strong>(baby goats)</strong></em> begin climbing and jumping off tree stumps and bales of hay when they're just <span style="color:rgb(0, 121, 14);font-weight:bold">a week old</span>
                 </p>
             </aside> 
         </header>
@@ -67,7 +67,8 @@
                             <option value="Blade Runner">
                             <option value="LOTR">
                             <option value="Johnny Mnemonic">
-                    </datalist>
+                        </datalist>
+                
                     <br />
 
                     <button  type="button" onclick="printUseless()">Submit</button>
@@ -86,7 +87,7 @@
         <section id="moreContent">
         <figure>
             <img src="images/cabrito.jpg" alt="Baby goat" style="width:100%">
-            <figcaption>Same picture, but with a caption</figcaption>
+            <figcaption><b><i>Same picture, but with a caption</i></b></figcaption>
         </figure>
 
         <details>
@@ -95,6 +96,8 @@
             <p>Goats can be taught their name and to come when called.</p>
         </details>
         <br />
+
+        <hr />
 
         
         <table style="border: 1px solid black;">
@@ -121,6 +124,29 @@
             <li>Third </li>
         </ol> 
         </section>
+
+        <template>
+            <h2>Hidden content. Never revealed</h2>
+        </template>
+        <pre>
+            This is real text, this is a beautiful
+            beautiful
+            text
+        </pre>
+        <canvas id="myCanvas">
+            This is an empty canvas
+        </canvas>
+
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="20" stroke="blue" stroke-width="2" fill="yellow" />
+        </svg>
+
+        <video width="320" height="240" controls>
+            <source src="videos/meme.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video> 
+        
 
 
     </main>
