@@ -1,0 +1,103 @@
+
+:root {
+    --animation-duration: 10s;
+    --white: #ffffff;
+}
+/* Header section of documents */
+header {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/banner.png");
+}
+
+@keyframes example {
+    0%   {color:black;}
+    25%  {color:red; }
+    50%  {color:blue; }
+    75%  {color:green; }
+    100% {color:black;}
+  }
+
+header > h1 {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+header a   {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+header a:hover {
+    border-bottom: 3px solid red;
+  }
+
+header a.active {
+    border-bottom: 3px solid red;
+}
+
+#homeHead h2 {
+    text-decoration: underline;
+}
+
+footer {
+    animation-name: example;
+    animation-duration: var(--animation-duration,);
+    animation-iteration-count: infinite;
+}
+
+/* link styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1dvh;
+}
+
+li > img {
+    width: 35px;
+    height: 35px;
+}
+
+li  a {
+    padding-left: 2dvh;
+
+}
+
+li a:visited {
+color: purple;
+}
+
+li a:hover {
+    color: color-mix(in lch, red 30%, blue);
+  }
+
+  /* font */
+
+@font-face {
+    font-family: robotoCondensed;
+    src: url(font/RobotoCondensed-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: robotoCondensed;
+    src: url(font/RobotoCondensed-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: robotoCondensed;
+    src: url(font/RobotoCondensed-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: robotoCondensed;
+    src: url(font/RobotoCondensed-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: robotoCondensed;
+}
