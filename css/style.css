@@ -29,7 +29,7 @@ header a   {
 }
 
 header a:hover {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(17, 0, 255);
   }
 
 header a.active {
@@ -100,4 +100,11 @@ li a:hover {
 
 body {
     font-family: robotoCondensed;
+}
+
+
+@media only screen and (max-width: 750px) {  
+    header {
+        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/bannerMobile.png");
+    }
 }
