@@ -71,6 +71,37 @@ li a:hover {
     color: color-mix(in lch, red 30%, blue);
   }
 
+
+  /* Details style*/
+details {
+padding-top: 1dvh;
+width: 35em;
+}
+
+details > summary {
+padding: 2px 6px;
+width: 30em;
+background-color: #ddd;
+cursor: pointer;
+}
+
+
+
+details[open] > summary {
+background-color: #ccf;
+}
+
+article > p:first-of-type {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 750px) {  
+    article > p {
+        width: 90vw;
+    }
+}
+
+
   /* font */
 
 @font-face {
