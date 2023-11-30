@@ -76,7 +76,7 @@
                     let comments = document.getElementById("comments");
 
                     let text = comments.value;
-                    let re = new RegExp("[^;]+" );
+                    let re = new RegExp("^((?!;).)*$" );
                     if (re.test(text)) {
                         console.log("Valid");
                     } else {
@@ -94,4 +94,6 @@
             } 
         </script>
     </section>
+    <p style="padding-left: 1dvh;">Disallowed character for the comments field: ;</p>
+
 </body>

@@ -14,8 +14,9 @@
     <header>
         <h1>Jorge's Website</h1>
         <nav >
-            <a class="active" href="/index.html">Home</a>
-            <a href="/projects.html">Projects</a>   
+            <a href="/index.html">Home</a>
+            <a href="/projects.html">Projects</a>  
+            <a class="active" href="/button.html">Button and darkmode</a> 
         </nav> 
 
     </header>
@@ -24,7 +25,7 @@
         <form id="form1" action="https://httpbin.org/post" method="post">
             <div id="formArea">
                 <label id="nameLabel" for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
+                <input type="text" id="name" name="name" pattern="^((?!;).)*$" required><br>
                 <output class="error" id="error1" name="error1" ></output> <output class="info" id="info1" name="info1">*Required</output>
 
                 <label id="emailLabel" for="email">E-mail:</label><br>
@@ -32,7 +33,7 @@
                 <output class="error" id="error2" name="error2"></output> <output class="info" id="info2" name="info2">*Required</output>
 
                 <label id="commentsLabel" for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="50" minlength="10" maxlength="100" pattern="[A-Za-z0-9.,'']+" required></textarea><br />
+                <textarea id="comments" name="comments" rows="4" cols="50" minlength="10" maxlength="100"  required></textarea><br />
                 <output class="error" id="error3" name="error3"></output> <output class="info" id="info3" name="info3">*Required</output>
 
                 <input type="hidden" id="possible_bot" name="possible_bot" value="true"> <br>
@@ -40,4 +41,5 @@
             </div>
         </form> 
     </section>
+    <p style="padding-left: 1dvh;">Disallowed character for the name field: ;</p>
 </body>
