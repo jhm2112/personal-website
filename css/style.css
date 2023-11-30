@@ -19,6 +19,7 @@ header {
 header > h1 {
     font-size: 25px;
     font-weight: bold;
+    color: black !important;
     
 }
 header a   {
@@ -101,6 +102,10 @@ article > p:first-of-type {
     }
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 
   /* font */
 
