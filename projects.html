@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
     <title>Projects</title>
     <meta name="description" content="Project section of website">
@@ -8,44 +8,37 @@
     <link href="images/doc.ico" rel="icon" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
+    <script src="scripts/timeComponent.js"></script>
 
 </head>
 
 <body>
-    <main>
+    <main id="projects">
         <header>
             <h1>Projects</h1>
 
             <nav id="navbar">
-                <a href="/index.html">Home</a>
-                <a class="active" href="/projects.html">Projects</a>
-                <a href="/button.html">Button and darkmode</a> 
+                <a href="/index.html" title="Homepage">Home</a>
+                <a class="active" href="/projects.html" title="Projects">Projects</a>
             </nav> 
 
         </header>
+        
         <h3>List of projects:</h3>
         <details>
             <summary>
-                Project 1
+                Personal Website
             </summary>
             <article id="project1">
                 
                 <p>About project:</p> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum 
-                enim facilisis. Montes nascetur ridiculus mus mauris vitae. Nec ultrices dui sapien
-                eget mi. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Vel 
-                pharetra vel turpis nunc eget lorem dolor. Gravida arcu ac tortor dignissim convalli
-                s aenean. Magna eget est lorem ipsum dolor sit amet consectetur. Duis at consectetur
-                lorem donec. Amet dictum sit amet justo. Eget egestas purus viverra accumsan. 
-                Ullamcorper sit amet risus nullam eget. Neque vitae tempus quam pellentesque nec nam. Massa placerat duis ultricies lacus sed turpis. Dignissim sodales ut eu sem integer vitae justo eget magna. Sit amet justo donec enim diam vulputate ut pharetra.
-                Hendrerit gravida rutrum quisque non. Interdum velit euismod in pellentesque massa 
-                placerat duis. A scelerisque purus semper eget. Faucibus nisl tincidunt eget nullam 
-                non nisi est. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Platea 
-                dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. 
-                Consectetur purus ut faucibus pulvinar elementum. In aliquam sem fringilla ut morbi 
-                tincidunt. Ultrices tincidunt arcu non sodales. Ante in nibh mauris cursus mattis.</p>
-                <p>Github repository: <a href="insertlink">Project1</a></p>
+                <p>Personal website using HTML, CSS and Javascript with several features:</p>
+                    <p>- Semantic HTML and Accesibility: The website is built using semantic HTML and other accesibility features for a user-friendly experience for all visitors.</p>
+                    <p>- Styled with CSS and Grid Layout: The website uses CSS to create a visually appealing and cohesive design, and grid was used to structure the content of the pages.</p>
+                    <p>- Mobile Reponsive Design: Alternate layout for mobile devices provides an optimization for mobile users.</p>
+                    <p>- Web-component: A useful set of APIs that allow for the creation of custom HTML tags with their own behavior. Demonstrated in the website with a time widget.</p>
+                
+                <p>Github repository: <a href="https://github.com/jhm2112/personal-website" title="Personal Website Repo Link">Project1</a></p>
             </article>
         </details>
 
@@ -79,6 +72,7 @@
     <footer>
 		<hr/>
 		<p>This page was made with &hearts; by Jorge Hdez</p>
+        <current-time>!!!Sorry! Javascript is required for time widget!!!</current-time>
 	</footer>
 
 </body>

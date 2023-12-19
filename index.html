@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Jorge's Website</title>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link href="images/doc.ico" rel="icon" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
+    <script src="scripts/timeComponent.js"></script>
 
 </head>
 
@@ -16,9 +17,8 @@
         <header>
             <h1>Jorge's Website</h1>
             <nav >
-                <a class="active" href="/index.html">Home</a>
-                <a href="/projects.html">Projects</a>   
-                <a href="/button.html">Button and darkmode</a>
+                <a class="active" href="/index.html" title="Homepage">Home</a>
+                <a href="/projects.html" title="Projects">Projects</a>   
             </nav> 
 
         </header>
@@ -33,34 +33,34 @@
             </picture>
             <h3> About me </h3>
             <p id="aboutMe"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                 amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                Hi, I'm Jorge Hernandez and I recently graduated from the University of California San Diego, where
+                I earned my bachelor's degree in Computer Science. I'm currently looking for job opportunities in the software industry, anywhere in the US. </br></br>
+                <strong>Skills:</strong> While I do have experience with specific languages, like Java, C++ and Javascript and other tools, 
+                the approach at UCSD was to prepare students with a strong theoretical foundation in many areas of Computer Science that allows for an easier transition to most languages or
+                technologies that are currently being used. I also have some projects (see my project tab) and I will continue to work on other stuff
+                now that I have more time. Some projects I've done while in college include websites, an android application, and smaller programs 
+                that I wrote for a Databases course.
             </p>
         </section>
         <section id="links"> 
             <h3>Links</h3>
             <ul>
-                <li><img src="images/linkedinLogo.png"><a href="https://www.linkedin.com/in/jorge-hernandez-b1356b203/">LinkedIn</a> </li>
-                <li><img src="images/githubLogo.png"><a href="https://github.com/jhm2112">Github</a></li>
-                <li><img src="images/resumeLogo.png"><a href="https://drive.google.com/file/d/1YWqOfrh85f9mtvXcXTNQEdGaivlpB9cx/view">Resume</a></li>
+                <li><img src="images/linkedinLogo.png" alt="linkedin logo"><a href="https://www.linkedin.com/in/jorge-hernandez-b1356b203/" title="Linkedin profile link">LinkedIn</a> </li>
+                <li><img src="images/githubLogo.png" alt="github logo"><a href="https://github.com/jhm2112" title="Github profile link">Github</a></li>
+                <li><img src="images/resumeLogo.png" alt="resume logo"><a href="https://drive.google.com/file/d/1YWqOfrh85f9mtvXcXTNQEdGaivlpB9cx/view" title="Link to resume">Resume</a></li>
             </ul>   
         </section>
 
         <section id="contact">
             <h3>Contact me</h3>
-            <p>By email: <a href = "mailto: reshiockme2112@gmail.com">reshiockme2112@gmail.com</a> </p>
+            <p>By email: <a href = "mailto: reshiockme2112@gmail.com" title="Link to email">reshiockme2112@gmail.com</a> </p>
         </section>
     </main>
 
     <footer>
 		<hr/>
 		<p>This page was made with &hearts; by Jorge Hdez</p>
+        <current-time>!!!Sorry! Javascript is required for time widget!!!</current-time>
 	</footer>
 
 </body>

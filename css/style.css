@@ -7,8 +7,27 @@
 }
 /* Header section of documents */
 header {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/banner.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/banner.jpg");
 }
+
+h1,h2 {
+    text-decoration: underline;
+}
+
+#homeHead h3 {
+    background-color: rgb(209, 209, 209);
+}
+#links h3 {
+    background-color: rgb(209, 209, 209);
+}
+#contact h3{
+    background-color: rgb(209, 209, 209);
+}
+
+footer > current-time {
+    padding-bottom: 2dvh;
+}
+
 
 @keyframes example {
     0%   {color:black;}
@@ -138,11 +157,12 @@ article > p:first-of-type {
 
 body {
     font-family: robotoCondensed;
+    background-color: rgb(253, 253, 253);
 }
 
 
 @media only screen and (max-width: 750px) {  
     header {
-        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/bannerMobile.png");
+        background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/bannerMobile.jpg");
     }
 }
