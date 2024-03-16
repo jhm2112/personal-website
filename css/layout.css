@@ -21,14 +21,20 @@ body {
 }
 
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(116, 187, 206);
+
+}
 
 footer > p {
     padding-left: 1dvh;
 }
 
-footer > current-time {
-    padding-left: 1dvh;
-}
+
 
 
 
@@ -64,13 +70,13 @@ header nav {
     grid-area: 1 / 1/ 2/ 2;
 }
 
-#links >h3 {
+#links > h3 {
     height: 4dvh;
     width: 40dvh;
     padding-left: 1dvh;
     font-size: x-large;
 }
-#contact >h3 {
+#contact > h3 {
     height: 4dvh;
     width: 40dvh;
     padding-left: 1dvh;
@@ -107,6 +113,8 @@ header nav {
     padding-left: 1dvh;
 
 }
+
+
 
 /* mobile layout */
 @media only screen and (max-width: 750px) {  
