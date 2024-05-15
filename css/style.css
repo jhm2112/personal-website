@@ -24,9 +24,6 @@ h1,h2 {
     background-color: rgb(209, 209, 209);
 }
 
-footer > current-time {
-    padding-bottom: 2dvh;
-}
 
 
 @keyframes example {
