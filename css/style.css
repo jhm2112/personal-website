@@ -5,26 +5,80 @@
     --background-color: black;
     --font-color: white;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+picture {
+    margin: .3rem .3rem .3rem .3rem;
+    padding-bottom: .3rem;
+}
+
+#myPic {
+    margin-top: 2rem;
+    border-radius: 5%;
+    border: 4px solid #8ec1e3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
 /* Header section of documents */
 header {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/banner.jpg");
 }
 
 h1,h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-decoration: underline;
 }
 
-#homeHead h3 {
+h3 {
     background-color: rgb(209, 209, 209);
-}
-#links h3 {
-    background-color: rgb(209, 209, 209);
-}
-#contact h3{
-    background-color: rgb(209, 209, 209);
+    padding:  0.5rem 7rem 0.5rem 0.5rem;
+    display:inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
+section + section {
+  border-top: 1px solid #ddd;
+  padding-top: var(--space-lg);
+  margin-top: var(--space-lg);
+}
 
+#homeHead {
+    margin-left:15rem;
+    margin-right: 15rem ;
+}
+
+#aboutMe {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+#bodyOfContent {
+    margin: 2rem 15rem 2rem 15rem;
+}
+
+#projectBody {
+    margin: 2rem 15rem 2rem 15rem;
+}
+
+#currentStuff {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 2rem 15rem 2rem 15rem;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 @keyframes example {
     0%   {color:black;}
@@ -32,54 +86,64 @@ h1,h2 {
     50%  {color:blue; }
     75%  {color:green; }
     100% {color:black;}
-  }
+}
 
 header > h1 {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     color: black !important;
     
 }
+
 header a   {
-    font-size: 18px;
+    font-size:1.5rem;
     color: black;
     text-decoration: none;
-    
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 header a:hover {
-    border-bottom: 3px solid rgb(17, 0, 255);
+    border-bottom: .3rem solid rgb(17, 0, 255);
   }
 
 header a.active {
-    border-bottom: 3px solid red;
+    border-bottom: .3rem solid red;
 }
 
-#homeHead h2 {
-    text-decoration: underline;
-}
 
 footer {
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem 1rem 1rem;
+    border-top: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: #bae1fc;
     animation-name: example;
     animation-duration: var(--animation-duration,);
     animation-iteration-count: infinite;
+
 }
 
 /* link styles */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1dvh;
+    list-style-type:none;
+    list-style-position:outside;
+    margin-right: 5rem;
+    padding-top: 1 rem;
+    align-self: center;
+}
+
+ul > li {
+    display: inline-block;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    
 }
 
 li > img {
     width: 35px;
     height: 35px;
-}
-
-li  a {
-    padding-left: 2dvh;
-
+    margin-right: .3rem ;
 }
 
 li a:visited {
@@ -88,23 +152,26 @@ color: purple;
 
 li a:hover {
     color: color-mix(in lch, red 30%, blue);
-  }
+}
 
+li a {
+    text-decoration: none;
+}
 
   /* Details style*/
 details {
-padding-top: 1dvh;
-width: 35em;
+    padding-top: 1rem;
+    transition: background 0.2s ease;
+    
 }
+
 
 details > summary {
-padding: 2px 6px;
-width: 30em;
-background-color: #ddd;
-cursor: pointer;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    background-color: #ebe2e2;
+    cursor: pointer;
 }
-
-
 
 details[open] > summary {
 background-color: #ccf;
